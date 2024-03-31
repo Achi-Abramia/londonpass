@@ -30,6 +30,8 @@
   .header-nav ul,
   .header-nav-bar {
     display: flex;
+    padding: 10px;
+    align-items: center;
   }
 
   .header-nav li {
@@ -39,4 +41,26 @@
   .shopping-cart {
     padding-left: 30px;
     border-left: 1px solid black;
+  }
+
+  .sticky-bg {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 100%;
+    background-color: rgb(232, 30, 50);
+    padding: 15px;
+  }
+
+  .sticky-header {
+    width: 1300px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .link  a {
+    color:  white;
   }
