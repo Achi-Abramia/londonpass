@@ -23,4 +23,20 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 5px;
+    align-items: center;
+  }
+
+  .header-nav ul,
+  .header-nav-bar {
+    display: flex;
+  }
+
+  .header-nav li {
+    padding-right: 25px;
+  }
+
+  .shopping-cart {
+    padding-left: 30px;
+    border-left: 1px solid black;
   }
