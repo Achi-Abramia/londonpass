@@ -44,10 +44,10 @@
   }
 
   .sticky-bg {
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%);
-    max-width: 100%;
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 100%;
     background-color: rgb(232, 30, 50);
     padding: 15px;
   }
