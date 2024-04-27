@@ -8,12 +8,16 @@
     text-decoration: none;
     color: initial;
   }
+
+  body {
+    font-family: "Inter", "OpenSans", "GillSans", "Corbel", "Arial", "SansSerif";
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
   
   ul {
     list-style: none;
-  }
-  
-  .shopping-cart {
-    background: none;
-    border: none;
   }
