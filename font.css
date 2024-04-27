@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Arial";
+    src: url(fonts/Arial.ttf);
+}
+
+@font-face {
+    font-family: "Corbel";
+    src: url(fonts/Corbel.ttf);
+}
+
+@font-face {
+    font-family: "GilSans";
+    src: url(fonts/GilSans.ttf);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/Inter.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(fonts/OpenSans.ttf);
+}
+
+@font-face {
+    font-family: "SansSerif";
+    src: url(fonts/SansSerif.ttf);
+}
