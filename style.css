@@ -80,3 +80,11 @@
     right: 145%;
     bottom: -20%;
   }
+
+  @media (max-width: 1440px) {
+
+    .header-container {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
