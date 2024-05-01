@@ -6,7 +6,7 @@
   
   a {
     text-decoration: none;
-    color: initial;
+    color: inherit;
   }
 
   body {
@@ -35,10 +35,30 @@
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 5px;
+    padding-bottom: 5px;
     font-size: 15px;
     font-weight: 600;
     line-height: 16px;
     letter-spacing: 0px;
+  }
+
+  .header-nav-bar a {
+    position: relative;
+  }
+
+  .header-nav-bar nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0.5rem;
+    bottom: -8px;
+    background-color: rgb(42, 210, 201);
+    transition: all 0.1s ease-in 0s;
+  }
+
+  .header-nav-bar nav a:hover::after {
+    width: calc(100% - 1rem);
   }
 
     .header-nav-bar,
@@ -81,10 +101,87 @@
     bottom: -20%;
   }
 
+  .menu {
+    display: none;
+  }
+
+/* --------------------- END OF HEADER */
+
+/* ------------------------ STICKY */
+
+.sticky {
+  background-color: rgb(232, 30, 50);
+  position: sticky;
+  top: 0;
+}
+
+.sticky-header {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  color: rgb(255, 255, 255);
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.25px;
+  line-height: 22px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.sticky-link {
+  display: flex;
+  align-items: center;
+}
+
+
   @media (max-width: 1440px) {
 
-    .header-container {
+    .header-container,
+    .sticky-header {
       max-width: 80%;
       margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 1280px) {
+
+    .header-nav-bar nav,
+    .lang-selector,
+    .shopping-cart::before {
+      display: none;
+    }
+
+    .shopping-cart::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 1px;
+      height: 140%;
+      background-color: rgb(217, 219, 233);
+      left: 145%;
+      bottom: -20%;
+    }
+
+    .header-nav-bar {
+      gap: 40px;
+    }
+
+    .menu {
+      display: flex;
+      border: none;
+      background: none;
+      position: relative;
+      align-items: center;
+      gap: 12px;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: -0.1px;
+      cursor: pointer;
+      touch-action: manipulation;
+    }
+
+    .menu-text {
+      padding-bottom: 3px;
     }
   }
