@@ -22,7 +22,8 @@
     list-style: none;
   }
 
-  .header-container {
+  .header-container,
+  .main-image-card h1 {
     font-family: "Urbanist";
   }
 
@@ -136,16 +137,58 @@
 
 /* ------------------END OF STICKY} */
 
-  @media (max-width: 1440px) {
+/* ---------------------MAIN IMAGE */
+
+.main-image-container {
+  position: relative;
+}
+
+.main-image-bg {
+  position: absolute;
+  width: 100%;  
+  object-fit: cover;
+  max-height: 600px;
+  top: 0;
+  z-index: -10;
+}
+
+.main-card-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: left;
+}
+
+.main-image-card {
+  width: 40%;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 48px 40px;
+  margin: 48px 40px;
+}
+
+.main-image-card h1 {
+  font-size: 44px;
+  line-height: 52.8px;
+}
+
+.main-image-card p {
+  color: rgb(110, 113, 145);
+}
+
+  @media (max-width: 1280px) {
 
     .header-container,
     .sticky-header {
-      max-width: 80%;
-      margin: 0 auto;
+      max-width: 93%;
     }
-  }
 
-  @media (max-width: 1280px) {
+    .sticky-header {
+    padding: 10px 32px;
+    }
 
     .header-nav-bar nav,
     .lang-selector,
