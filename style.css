@@ -115,6 +115,7 @@
   background-color: rgb(232, 30, 50);
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .sticky-header {
@@ -146,7 +147,8 @@
 
 .main-image-bg {
   position: absolute;
-  width: 100%;  
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   max-height: 600px;
   top: 0;
@@ -168,7 +170,7 @@
   flex-direction: column;
   gap: 16px;
   padding: 48px 40px;
-  margin: 48px 40px;
+  margin: 55px 0px 55px 0px;
 }
 
 .main-image-card h1 {
@@ -203,15 +205,34 @@
   background-color: white;
 }
 
+.main-image-bottom-bg {
+  background-color: rgb(0, 42, 58);
+}
+
+.main-image-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 42, 58);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.25px;
+  line-height: 22px;
+  padding: 16px 24px;
+}
+
   @media (max-width: 1280px) {
 
     .header-container,
-    .sticky-header {
+    .sticky-header,
+    .main-image-bottom {
       max-width: 93%;
     }
 
     .sticky-header {
-    padding: 10px 32px;
+      padding: 10px 0px 10px 0px;
     }
 
     .header-nav-bar nav,
@@ -251,5 +272,28 @@
 
     .menu-text {
       padding-bottom: 3px;
+    }
+
+    .main-image-card {
+      margin: 40px 32px;
+      padding: 40px 32px;
+    }
+
+    .main-image-card h1 {
+      font-size: 34px;
+      line-height: 40.8px;
+    }
+
+    .main-image-link {
+      padding: 8px 32px;
+      border-radius: 6px;
+      font-size: 15px;
+      line-height: 19px;
+      letter-spacing: 0.25px;
+      height: calc(19px + 1rem);
+    }
+
+    .main-image-bottom {
+      padding: 8px 24px;
     }
   }
